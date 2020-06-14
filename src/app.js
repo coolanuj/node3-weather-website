@@ -16,7 +16,8 @@ app.use(express.static(path.join(__dirname, '../public')))
 
 app.get('', (req, res)=>{
     res.render('views/index', {
-        title: 'Anuj'
+        title: 'Search for weather',
+        name: "Anuj Mishra"
     })
 })
 
@@ -60,12 +61,14 @@ app.get('/product', (req, res)=>{
 })
 app.get('/help', (req, res)=>{
     res.render('views/help', {
-        title: 'Please help'
+        title: 'Commimg Soon.......',
+        name: "Anuj Mishra"
     })
 })
 app.get('/about', (req, res)=>{
     res.render('views/about', {
-        title: 'Anuj'
+        title: 'Anuj Mishra',
+        name: "Anuj Mishra"
     })
 })
 
