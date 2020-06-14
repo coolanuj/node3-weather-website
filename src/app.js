@@ -4,6 +4,7 @@ const express = require('express')
 const geocode = require('./utils/geocode')
 const forcast = require('./utils/forcast')
 const app = express()
+const port = process.env.PORT || 3000
 // set template engine
 app.set('view engine', 'hbs')
 //customise view Directory from views to templates folder. By default is folder is views
@@ -79,6 +80,6 @@ app.get('*', (req, res)=>{
 
 
 //80 & 443 : https & http
-app.listen(3000,()=>{
-    console.log('Server is running on 3000')
+app.listen(port,()=>{
+    console.log('Server is running on '+port)
 })
